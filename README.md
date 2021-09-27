@@ -28,13 +28,13 @@ docker run --rm -p 8888:8888 roboquant/jupyter
 ## Included tutorials
 The following tutorials are included and if you click on one of the notebook names below, the notebook will be automatically opened on MyBinder.org:
 
-- [visualization.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notenook/main?filepath=tutorials/visualization.ipynb) - Shows the charting capabilities of roboquant
-- [alpaca.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notenook/main?filepath=tutorials/alpaca.ipynb) - Shows the integration with Alpaca broker
-- [binance.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notenook/main?filepath=tutorials/binance.ipynb) - Shows the integration with Binance crypto exchange
-- [crypto.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notenook/main?filepath=tutorials/crypto.ipynb) - Shows the integration with many crypto exchange using the XChange library 
-- [custom_strategies.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notenook/main?filepath=tutorials/custom_strategies.ipynb) - How to develop a custom strategy
-- [iex_cloud.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notenook/main?filepath=tutorials/iex_cloud.ipynb) - Shows the integration with IEX Cloud data provider
-- [introduction.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notenook/main?filepath=tutorials/introduction.ipynb) - High level introduction
-- [technical_analysis.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notenook/main?filepath=tutorials/technical_analysis.ipynb) - How to develop technical analysis strategies quickly 
+- [visualization.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials/visualization.ipynb) - Shows the charting capabilities of roboquant
+- [alpaca.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials/alpaca.ipynb) - Shows the integration with Alpaca broker
+- [binance.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials/binance.ipynb) - Shows the integration with Binance crypto exchange
+- [crypto.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials/crypto.ipynb) - Shows the integration with many crypto exchange using the XChange library 
+- [custom_strategies.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials/custom_strategies.ipynb) - How to develop a custom strategy
+- [iex_cloud.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials/iex_cloud.ipynb) - Shows the integration with IEX Cloud data provider
+- [introduction.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials/introduction.ipynb) - High level introduction
+- [technical_analysis.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials/technical_analysis.ipynb) - How to develop technical analysis strategies quickly 
 - dotenv - Not a tutorial but an example environment file that can hold keys and secrets that are often required to connect to third party data providers and brokers
 
