@@ -8,14 +8,14 @@
 
 ![roboquant Logo](/docs/roboquant_jupyter_logo.png)
 
-This project contains a number of Jupyter notebook tutorials that demonstrate key capabilities of roboquant. 
+This repository contains a number of Jupyter notebook tutorials that demonstrate key capabilities of roboquant. The following picture shows one of the many available charts within the notebook environment. 
 
 ![Jupyter Lab](/docs/jupyter-lab.png)
 
-It also contains the code to generate a Docker image that makes it easy to run the Jupyter Notebooks on your local machine. This Docker image is published on Docker Hub, so you don't need to build the Docker Image unless you want to make changes. You can find out more at **[roboquant.org](https://roboquant.org)**
+This repository also contains the build script to generate a Docker image that makes it easy to run the Jupyter Notebooks on your local machine. This Docker image is published on Docker Hub, so you actually don't need to build the Docker Image unless you want to make changes. You can find out much more about the roboquant at **[roboquant.org](https://roboquant.org)** 
 
-## Run
-You can run the tutorials without installing anything on your local machine by just clicking the following link [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials)
+## Run notebooks
+If you prefer, you can run the tutorials without installing anything on your local machine by just clicking the following link [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials)
 
 It might take some time before the MyBinder environment is set up, and you can run the notebooks. This is mainly due to the limited resources that these free environments have available and the fact that Java/Kotlin isn't included in the default environment and needs to be installed first.   
 
@@ -25,8 +25,8 @@ Alternatively you can run a docker container on your local machine that has all 
 docker run --rm -p 8888:8888 roboquant/jupyter 
 ```
 
-## Content
-The following tutorials are included and if you click on the notebook name, the notebook will be automatically opened on MyBinder.org:
+## Included tutorials
+The following tutorials are included and if you click on one of the notebook names below, the notebook will be automatically opened on MyBinder.org:
 
 - [visualization.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notenook/main?filepath=tutorials/visualization.ipynb) - Shows the charting capabilities of roboquant
 - [alpaca.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notenook/main?filepath=tutorials/alpaca.ipynb) - Shows the integration with Alpaca broker
