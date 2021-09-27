@@ -1,4 +1,4 @@
-# roboquant notebook
+# Roboquant Notebook
 
 [![APL v2](https://img.shields.io/badge/license-Apache%202-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials)
@@ -6,26 +6,32 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/neurallayer/roboquant-notebook)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/neurallayer/roboquant-notebook)
 
-![roboquant Logo](/docs/roboquant_jupyter_logo.png)
+![roboquant Logo](/assets/roboquant_jupyter_logo.png)
 
-This repository contains a number of Jupyter notebook tutorials that demonstrate key capabilities of roboquant. The following picture shows one of the many available charts within the notebook environment. 
+This repository contains a number of Jupyter Notebook tutorials that demonstrate key capabilities of roboquant. The following picture shows one of the many available charts within the notebook environment. 
 
-![Jupyter Lab](/docs/jupyter-lab.png)
+![Jupyter Lab](/assets/jupyter-lab.png)
 
 This repository also contains the build script to generate a Docker image that makes it easy to run the Jupyter Notebooks on your local machine. This Docker image is published on Docker Hub, so you actually don't need to build the Docker Image unless you want to make changes. You can find out much more about the roboquant at **[roboquant.org](https://roboquant.org)** 
 
-## Run notebooks
+## Run Jupyter Notebooks
 If you prefer, you can run the tutorials without installing anything on your local machine by just clicking the following link [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials)
 
-It might take some time before the MyBinder environment is set up, and you can run the notebooks. This is mainly due to the limited resources that these free environments have available and the fact that Java/Kotlin isn't included in the default environment and needs to be installed first.   
+It might take some time before the MyBinder environment is set up, and you can run the notebooks. This is mainly due to the limited resources that these free environments have available and the fact that the Kotlin kernel isn't included in the default environment and needs to be installed first.   
 
-Alternatively you can run a docker container on your local machine that has all the tutorials included and will automatically spin-up a jupyter-lab environment:
+Alternatively you can run a Docker container on your local machine that has all the tutorials included and will automatically spin-up a Jupyter Lab environment:
 
 ```shell
 docker run --rm -p 8888:8888 roboquant/jupyter 
 ```
 
-## Included tutorials
+And if you prefer the classic Jupyter environment instead of Jupyter Lab, you can run the following command:
+
+```shell
+docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB="" roboquant/jupyter
+```
+
+## Included Tutorials
 The following tutorials are included and if you click on one of the notebook names below, the notebook will be automatically opened on MyBinder.org:
 
 - [visualization.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials/visualization.ipynb) - Shows the charting capabilities of roboquant
@@ -38,3 +44,15 @@ The following tutorials are included and if you click on one of the notebook nam
 - [technical_analysis.ipynb](https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?filepath=tutorials/technical_analysis.ipynb) - How to develop technical analysis strategies quickly 
 - dotenv - Not a tutorial but an example environment file that can hold keys and secrets that are often required to connect to third party data providers and brokers
 
+## Build Docker Image
+You can also build the Docker image from the source. First thing to do is to clone the roboquant-notebook GitHub repository to your local disk.
+Then run the build script from the repository root directory:
+
+```shell
+./docker/dockerbuild.sh
+```
+
+The build script has been tested and used with [Podman](https://podman.io/), but should also work with Docker. 
+
+## Contributions
+Contributions are greatly appreciated. This can be a fix or enhancement to one of the existing tutorials or a completely new tutorial. The best way to do so is to raise an issue on GitHub and afterwards a PR.
