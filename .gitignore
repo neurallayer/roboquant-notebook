@@ -1,0 +1,8 @@
+build/
+.idea/
+.gradle/
+out
+.ipynb_checkpoints
+*.iml
+*.avro
+target/
