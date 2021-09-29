@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:notebook-6.4.3
+FROM jupyter/base-notebook:notebook-6.4.4
 
 USER root
 
@@ -25,7 +25,7 @@ COPY --chown=1000:100 docker/assets/roboquant.json  /opt/conda/lib/python3.9/sit
 # Copy the tutorial notebooks and sample data to the home directory
 RUN mkdir -p /home/jovyan/tutorials
 COPY --chown=1000:100 tutorials /home/jovyan/tutorials
-COPY --chown=1000:100 data /home/jovyan/tutorials/data
+# COPY --chown=1000:100 data /home/jovyan/tutorials/data
 
 # Better width for jupyter notebooks with a custom css
 RUN mkdir -p /home/jovyan/.jupyter/custom
