@@ -9,9 +9,9 @@ RUN apt-get update && apt-get install -y openjdk-11-jre
 USER 1000
 
 # Install the Kotlin kernel in the Jupyter environment
-RUN conda install -y -c jetbrains kotlin-jupyter-kernel
+# RUN conda install -y -c jetbrains kotlin-jupyter-kernel
 # RUN conda install -y openjdk
-# RUN conda install -y -c jetbrains-dev kotlin-jupyter-kernel
+RUN conda install -y -c jetbrains-dev kotlin-jupyter-kernel
 
 # Make additional Kotlin kernels available with different memory configurations
 RUN python -m kotlin_kernel add-kernel --name "SMALL 1GB" --jvm-arg=-Xmx1G
