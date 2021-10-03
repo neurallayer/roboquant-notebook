@@ -27,9 +27,11 @@ RUN mkdir -p /home/jovyan/tutorials
 COPY --chown=1000:100 tutorials /home/jovyan/tutorials
 # COPY --chown=1000:100 data /home/jovyan/tutorials/data
 
-# Better width for jupyter notebooks with a custom css
+# Some theming & better width for jupyter classic with a custom css
 RUN mkdir -p /home/jovyan/.jupyter/custom
 COPY --chown=1000:100  docker/assets/custom.css /home/jovyan/.jupyter/custom/
+RUN mkdir -p /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/ && \
+        echo '{ "theme":"JupyterLab Dark"}' > /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings
 
 # Override a default settings of the base image, we switch to Jupyter Lab as the default
 ENV JUPYTER_ENABLE_LAB=yes
