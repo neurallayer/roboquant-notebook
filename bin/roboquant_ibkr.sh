@@ -1,0 +1,1 @@
+docker run --rm -p 8888:8888 --network=host -e JUPYTER_ENABLE_LAB=yes roboquant/jupyter
