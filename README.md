@@ -32,9 +32,9 @@ docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB="" roboquant/jupyter
 ```
 
 ### IBKR only
-If you also want test the Interactive Brokers Notebook that is included, it requires access to a local running Trader Workstation or IB Gateway. 
+If you also want test the Interactive Brokers Notebook that is included, it is important to realize that the notebook requires access to a local running instance of Trader Workstation or IB Gateway. 
 
-For the docker container to have this access, you can use the ```--network=host``` flag. This will spin up the container without an isolated virtual network.
+For the docker container to have this network access accessible, you can use the ```--network=host``` flag. This will spin up the container without an isolated virtual network.
 
 ```shell
 docker run --rm -p 8888:8888 --network=host -roboquant/jupyter
@@ -56,8 +56,7 @@ The following tutorials are included and if you click on one of the notebook nam
 > Please note that the Interactive Brokers tutorial cannot be run on MyBinder.org since it requires a local running Trader Workstation or IB Gateway that is already authenticated. 
 
 ## Build Docker Image
-You can also build the Docker image from the source. First thing to do is to clone the roboquant-notebook GitHub repository to your local disk.
-Then run the build script from the repository root directory:
+You can also build the Docker image from the source. First thing to do is to clone the roboquant-notebook GitHub repository to your local disk. Then run the build script from the repository root directory:
 
 ```shell
 ./docker/dockerbuild.sh
