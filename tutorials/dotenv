@@ -23,6 +23,10 @@ SAMPLE_PRIVATE_KEY=another_key_value
 # BINANCE_API_KEY=your_key
 # BINANCE_API_SECRET=you_secret
 
+# Uncomment the following two lines and change the values for OANDA access
+# OANDA_ACCOUNT_ID=your_account
+# OANDA_API_KEY=your_key
+
 # Uncomment the following lines for email authentication
 # mail.host=email_host
 # mail.username=your_email_username
