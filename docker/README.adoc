@@ -32,6 +32,6 @@ You can also build the Docker image from the source. First thing to do is to clo
 ./docker/dockerbuild.sh
 ----
 
-The build script has been tested and used with Docker, but also works with podman if you add `--format docker` as extra command line argument.
+The build script has been tested and used with Docker Desktop. It builds by default both an image for both Intel and ARM64 (Apple Silicon). See the script if you didn't enable the new builder yet.
 
-Right now only bash shell scripts are provided to build and start notebooks. So if you're on Windows you either have to use WSL or run the commands in the shell script from the command line manually.
+Right now only shell scripts are provided to build and start notebooks. So if you're on Windows you either have to use WSL or run the commands in the shell script from the command line manually.
