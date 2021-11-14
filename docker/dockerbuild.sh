@@ -3,8 +3,8 @@
 # Traditional docker build
 # docker build -t roboquant/jupyter:latest -f docker/Dockerfile .
 
-# New Docker builder that supports building for multi-arch
-# Run the following lines once to switch to new builder
+# New Docker builder that supports building for multi-architectures
+# Run the following 3 lines once to enable the new builder
 # docker buildx create --name mybuilder
 # docker buildx use mybuilder
 # docker buildx inspect --bootstrap
