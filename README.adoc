@@ -27,23 +27,7 @@ Alternatively you can run a Docker container on your local machine that has all 
 docker run --rm -p 8888:8888 roboquant/jupyter
 ----
 
-And if you prefer the classic Jupyter environment instead of Jupyter Lab, you can run the following command:
-
-[source,shell]
-----
-docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB="" roboquant/jupyter
-----
-
-=== Interactive Brokers only
-
-If you also want test the Interactive Brokers Notebook that is included, it is important to realize that the notebook requires access to a local running instance of Trader Workstation or IB Gateway. 
-
-For the docker container to have this network access accessible, you can use the `--network=host` flag. This will start the container without an isolated virtual network.
-
-[source,shell]
-----
-docker run --rm -p 8888:8888 --network=host -roboquant/jupyter
-----
+See link:/docker/README.adoc[README] for more options and details.
 
 == Included Tutorials
 
@@ -57,10 +41,10 @@ The following tutorials are included and if you click on one of the notebook nam
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/iex_cloud.ipynb[iex_cloud.ipynb] - Shows the integration with IEX Cloud data provider
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/introduction.ipynb[introduction.ipynb] - High level introduction
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/technical_analysis.ipynb[technical_analysis.ipynb] - How to develop technical analysis strategies quickly
-* dotenv - Not a tutorial but an example environment file that can hold keys and secrets that are often required to connect to third party data providers and brokers
+* dotenv - Not a tutorial but an example environment file that can hold the keys and secrets which are often required to connect to third party data providers and brokers
 
 
-NOTE: the Interactive Brokers tutorial cannot be run on MyBinder.org since it requires a local running Trader Workstation or IB Gateway.
+NOTE: the Interactive Brokers tutorial cannot be run on MyBinder.org since it requires a local running Trader Workstation or IB Gateway. You can however run it on a local installed Jupyter Notebook.
 
 == Build Docker Image
 Check the instructions in the link:/docker/README.adoc[README] in the docker directory on how to build a Docker image from source.
