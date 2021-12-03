@@ -38,6 +38,7 @@ The following tutorials are included and if you click on one of the notebook nam
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/binance.ipynb[binance.ipynb] - Shows the integration with Binance crypto exchange
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/crypto.ipynb[crypto.ipynb] - Shows the integration with many crypto exchange using the XChange library
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/custom_strategies.ipynb[custom_strategies.ipynb] - How to develop a custom strategy
+* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/custom_policies.ipynb[custom_policies.ipynb] - How to develop a custom policy
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/iex_cloud.ipynb[iex_cloud.ipynb] - Shows the integration with IEX Cloud data provider
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/introduction.ipynb[introduction.ipynb] - High level introduction
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/technical_analysis.ipynb[technical_analysis.ipynb] - How to develop technical analysis strategies quickly
