@@ -52,3 +52,11 @@ Check the instructions in the link:/docker/README.adoc[README] in the docker dir
 
 == Contributions
 Contributions are greatly appreciated. This can be a fix or enhancement to one of the existing tutorials or a completely new tutorial. The best way to do so is to raise an issue on GitHub and afterwards a PR.
+
+Before check-in, make sure the notebooks don't have any cell output, for example by using the following steps:
+
+[source,shell]
+----
+cd tutorials
+jupyter nbconvert --clear-output --inplace *.ipynb
+----
