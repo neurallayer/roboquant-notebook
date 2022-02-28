@@ -1,9 +1,10 @@
-FROM jupyter/base-notebook:notebook-6.4.5
+# FROM jupyter/base-notebook:notebook-6.4.8
+FROM jupyter/base-notebook:lab-3.2.9
 
 USER root
 
 # Install the Java JRE runtime.
-RUN apt-get update && apt-get install -y openjdk-11-jre
+RUN apt-get update && apt-get install -y openjdk-17-jre
 
 # The remaining we run under the standard user
 USER 1000
@@ -20,7 +21,7 @@ RUN python -m kotlin_kernel add-kernel --name "LARGE 8GB" --jvm-arg=-Xmx8G
 RUN python -m kotlin_kernel add-kernel --name "XLARGE 16GB" --jvm-arg=-Xmx16G
 
 # Install the json files for the %use roboquant line magic to work
-COPY --chown=1000:100 docker/assets/roboquant.json  /opt/conda/lib/python3.9/site-packages/run_kotlin_kernel/libraries/
+# COPY --chown=1000:100 docker/assets/roboquant.json  /opt/conda/lib/python3.9/site-packages/run_kotlin_kernel/libraries/
 
 # Copy the tutorial notebooks and sample data to the home directory
 RUN mkdir -p /home/jovyan/tutorials
