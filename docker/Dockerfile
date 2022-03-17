@@ -1,9 +1,10 @@
-# FROM jupyter/base-notebook:notebook-6.4.8
+# Latest version of base-notebook:lab uses an Ubuntu version that cannot install JRE 17 due to issues when installing
+# Java certificates, so for now we stay on 3.2.9
 FROM jupyter/base-notebook:lab-3.2.9
 
 USER root
 
-# Install the Java JRE runtime.
+# Install the OpenJDK 17 JRE runtime
 RUN apt-get update && apt-get install -y openjdk-17-jre
 
 # The remaining we run under the standard user
@@ -14,7 +15,10 @@ USER 1000
 # RUN conda install -y openjdk
 RUN conda install -y -c jetbrains-dev kotlin-jupyter-kernel
 
-# Make additional Kotlin kernels available with different memory configurations
+# Install echarts package, used for serverside rendering of charts
+RUN npm install echarts
+
+# Make additional Kotlin kernels available with different memory profiles
 RUN python -m kotlin_kernel add-kernel --name "SMALL 1GB" --jvm-arg=-Xmx1G
 RUN python -m kotlin_kernel add-kernel --name "MEDIUM 4GB" --jvm-arg=-Xmx4G
 RUN python -m kotlin_kernel add-kernel --name "LARGE 8GB" --jvm-arg=-Xmx8G
@@ -34,6 +38,6 @@ COPY --chown=1000:100  docker/assets/custom.css /home/jovyan/.jupyter/custom/
 RUN mkdir -p /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/ && \
         echo '{ "theme":"JupyterLab Dark"}' > /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings
 
-# Override a default settings of the base image, we switch to Jupyter Lab as the default
+# We use Jupyter Lab as the default
 ENV JUPYTER_ENABLE_LAB=yes
 

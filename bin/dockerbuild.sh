@@ -9,5 +9,10 @@
 # docker buildx use mybuilder
 # docker buildx inspect --bootstrap
 
+# Clean output cells of notebooks
+cd tutorials
+jupyter nbconvert --clear-output --inplace *.ipynb
+cd ..
+
 # Build for Intel and Apple Silicon
 docker buildx build --platform linux/amd64,linux/arm64 -t roboquant/jupyter:latest -f docker/Dockerfile --push .
