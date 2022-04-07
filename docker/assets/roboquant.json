@@ -2,15 +2,17 @@
   "description": "Algorithmic trading platform for Kotlin",
   "link": "https://roboquant.org",
   "properties": {
-    "v": "0.8-SNAPSHOT"
+    "v": "0.9-SNAPSHOT"
   },
   "repositories": [
     "https://roboquant.jfrog.io/artifactory/roboquant"
   ],
   "dependencies": [
     "org.roboquant:roboquant-core:$v",
+    "org.roboquant:roboquant-jupyter:$v",
     "org.roboquant:roboquant-extra:$v",
-    "org.roboquant:roboquant-crypto:$v"
+    "org.roboquant:roboquant-crypto:$v",
+    "org.roboquant:roboquant-ta:$v"
   ]
 }
 

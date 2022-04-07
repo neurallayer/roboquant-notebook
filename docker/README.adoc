@@ -4,8 +4,7 @@ The roboquant docker image includes the following software:
 - Jupyter notebook image (`jupyter/base-notebook`) as the base image
 - Kotlin kernel for Jupyter
 - OpenJDK 17 runtime
-- Roboquant tutorials and test data
-- Nodejs echarts module for serverside rendering
+- Tutorials and sample data
 
 == Usage
 You can start using Jupyter Lab straight out-of-the-box by running the following command:
@@ -15,14 +14,7 @@ You can start using Jupyter Lab straight out-of-the-box by running the following
 docker run --rm -p 8888:8888 roboquant/jupyter
 ----
 
-or if you like the classic Jupyter-Notebook environment better:
-
-[source,bash]
-----
-docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB="" roboquant/jupyter
-----
-
-Then open the url that appears in your terminal in your browser to try it out. The `tutorials` directory contains several notebooks that provide a nice introduction into roboquant.
+Then open the url that appears in your terminal in your browser to try it out. The `tutorials` directory contains several notebooks that provide a introduction into roboquant.
 
 == Interactive Brokers only
 If you also want test the Interactive Brokers Notebook that is included, it is important to realize that the notebook requires access to a local running instance of Trader Workstation or IB Gateway (recommended).

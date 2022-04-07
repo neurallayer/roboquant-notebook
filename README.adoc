@@ -1,4 +1,11 @@
 = Roboquant Notebook
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 
 image:https://img.shields.io/badge/license-Apache%202-blue.svg[APL v2,link=http://www.apache.org/licenses/LICENSE-2.0.html]
 image:https://mybinder.org/badge_logo.svg[Binder,link=https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials]
