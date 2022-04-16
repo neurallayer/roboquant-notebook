@@ -1,3 +1,2 @@
-cp ~/docker/assets/roboquant.json /srv/conda/envs/notebook/lib/python3.7/site-packages/run_kotlin_kernel/libraries/
 mkdir -p /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/ && \
         echo '{ "theme":"JupyterLab Dark"}' > /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings
