@@ -36,23 +36,23 @@ docker run --rm -p 8888:8888 roboquant/jupyter
 
 See link:/docker/README.adoc[README] for more options and details.
 
-== Included Tutorials
+== Included Notebooks
 
-The following tutorials are included and if you click on one of the notebook names below, the notebook will be automatically opened on MyBinder.org:
+The following notebooks are included and if you click on one of the notebook names below, the notebook will be automatically opened on MyBinder.org:
 
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/visualization.ipynb[visualization.ipynb] - Shows the charting capabilities of roboquant
+* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/charts.ipynb[charts.ipynb] - Shows the charting capabilities of roboquant
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/alpaca.ipynb[alpaca.ipynb] - Shows the integration with Alpaca broker
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/binance.ipynb[binance.ipynb] - Shows the integration with Binance crypto exchange
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/crypto.ipynb[crypto.ipynb] - Shows the integration with many crypto exchange using the XChange library
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/custom_strategies.ipynb[custom_strategies.ipynb] - How to develop a custom strategy
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/custom_policies.ipynb[custom_policies.ipynb] - How to develop a custom policy
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/iex_cloud.ipynb[iex_cloud.ipynb] - Shows the integration with IEX Cloud data provider
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/introduction.ipynb[introduction.ipynb] - High level introduction
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/technical_analysis.ipynb[technical_analysis.ipynb] - How to develop technical analysis strategies quickly
+* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/strategies.ipynb[strategies.ipynb] - How to develop your own strategies
+* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/policies.ipynb[policies.ipynb] - How to develop a custom policy
+* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/iex.ipynb[iex.ipynb] - Shows the integration with IEX Cloud data provider
+* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/intro.ipynb[intro.ipynb] - High level introduction
+* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/tech-analysis.ipynb[tech-analysis.ipynb] - How to develop technical analysis based strategies
 * dotenv - Not a tutorial but an example environment file that can hold the keys and secrets which are often required to connect to third party data providers and brokers
 
 
-NOTE: the Interactive Brokers tutorial cannot be run on MyBinder.org since it requires a local running Trader Workstation or IB Gateway. You can however run it on a local installed Jupyter Notebook.
+NOTE: the `ibkr` (Interactive Brokers) notebook cannot be run on MyBinder.org since it requires a local running Trader Workstation or IB Gateway. You can however run it on a local installed Jupyter Notebook.
 
 == Build Docker Image
 Check the instructions in the link:/docker/README.adoc[README] in the docker directory on how to build a Docker image from source.
