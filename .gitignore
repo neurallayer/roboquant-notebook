@@ -7,3 +7,4 @@ out
 *.avro
 target/
 tutorials/TwsApi.jar
+.DS_STORE
