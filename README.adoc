@@ -55,7 +55,7 @@ The following notebooks are included and if you click on one of the notebook nam
 NOTE: the `ibkr` (Interactive Brokers) notebook cannot be run on MyBinder.org since it requires a local running Trader Workstation or IB Gateway. You can however run it on a local installed Jupyter Notebook.
 
 == Build Docker Image
-Check the instructions in the link:/docker/README.adoc[README] in the docker directory on how to build a Docker image from source.
+Check the instructions in the link:/bin/README.adoc[README] in the bin directory on how to build a Docker image from source.
 
 == Contributions
 Contributions are greatly appreciated. This can be a fix or enhancement to one of the existing tutorials or a completely new tutorial. The best way to do so is to raise an issue on GitHub and afterwards a PR.

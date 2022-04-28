@@ -5,4 +5,6 @@ out
 *.iml
 *.avro
 target/
+binder/
+.github/
 tutorials/TwsApi.jar
