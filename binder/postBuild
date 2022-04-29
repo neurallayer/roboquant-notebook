@@ -1,6 +1,10 @@
 mkdir -p /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/ && \
         echo '{ "theme":"JupyterLab Dark"}' > /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings
 
+mvn org.apache.maven.plugins:maven-dependency-plugin:2.1:get -Dartifact=org.roboquant:roboquant:0.9.3-SNAPSHOT -DrepoUrl=https://s01.oss.sonatype.org/content/repositories/snapshots
+mvn org.apache.maven.plugins:maven-dependency-plugin:2.1:get -Dartifact=org.roboquant:roboquant-ta:0.9.3-SNAPSHOT -DrepoUrl=https://s01.oss.sonatype.org/content/repositories/snapshots
+mvn org.apache.maven.plugins:maven-dependency-plugin:2.1:get -Dartifact=org.roboquant:roboquant-jupyter:0.9.3-SNAPSHOT -DrepoUrl=https://s01.oss.sonatype.org/content/repositories/snapshots
+
 rm -rf .github
 rm -rf binder
 rm -rf bin

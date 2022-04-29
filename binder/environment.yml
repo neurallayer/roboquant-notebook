@@ -6,4 +6,5 @@ channels:
 dependencies:
   - openjdk
   - kotlin-jupyter-kernel
+  - maven
 prefix: /srv/conda/envs/notebook
