@@ -24,7 +24,7 @@ You can find out much more about the roboquant at *https://roboquant.org[roboqua
 == Run Jupyter Notebooks
 If you prefer, you can run the tutorials without installing anything on your local machine by just clicking the following link image:https://mybinder.org/badge_logo.svg[Binder,link=https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials]
 
-It might take some time before the MyBinder environment is set up, and you can run the notebooks. This is mainly due to the limited resources that these free environments have available and the fact that the Kotlin kernel isn't included in the default environment and needs to be installed first. 
+It might take some time before the MyBinder environment is set up before you can run the notebooks. This is mainly due to the limited resources that these free environments have available and the fact that the Kotlin kernel isn't included in the default environment and needs to be build first.
 
 Alternatively you can run a Docker container on your local machine that has all the tutorials included and will automatically spin-up a Jupyter Lab environment:
 
