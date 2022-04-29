@@ -49,7 +49,7 @@ The following notebooks are included and if you click on one of the notebook nam
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/iex.ipynb[iex.ipynb] - Shows the integration with IEX Cloud data provider
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/intro.ipynb[intro.ipynb] - High level introduction
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/tech-analysis.ipynb[tech-analysis.ipynb] - How to develop technical analysis based strategies
-* dotenv - Not a tutorial but an example environment file that can hold the keys and secrets which are often required to connect to third party data providers and brokers
+* dotenv - Not a notebook but an example environment file that can hold the keys and secrets which are often required to connect to third party data providers and brokers.
 
 
 NOTE: the `ibkr` (Interactive Brokers) notebook cannot be run on MyBinder.org since it requires a local running Trader Workstation or IB Gateway. You can however run it on a local installed Jupyter Notebook.
