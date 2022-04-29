@@ -1,4 +1,5 @@
 = Roboquant Notebook
+
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
@@ -12,11 +13,9 @@ image:https://mybinder.org/badge_logo.svg[Binder,link=https://mybinder.org/v2/gh
 image:https://img.shields.io/github/issues/neurallayer/roboquant-notebook[GitHub issues]
 image:https://img.shields.io/github/last-commit/neurallayer/roboquant-notebook[GitHub last commit]
 
-image:/assets/roboquant_jupyter_logo.png[roboquant Logo]
+This repository contains a number of Jupyter notebooks that demonstrate key capabilities of roboquant. The following picture shows one of the many available charts within the notebook environment.
 
-This repository contains a number of Jupyter Notebook tutorials that demonstrate key capabilities of roboquant. The following picture shows one of the many available charts within the notebook environment. 
-
-image:/assets/jupyter-lab.png[Jupyter Lab]
+image:http://roboquant.org/img/jupyter-lab.png[Jupyter Lab]
 
 This repository also contains the build script to generate a Docker image that makes it easy to run the Jupyter Notebooks on your local machine. This Docker image is published on Docker Hub, so you actually don't need to build the Docker Image unless you want to make changes.
 
