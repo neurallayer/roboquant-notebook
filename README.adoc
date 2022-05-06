@@ -12,12 +12,15 @@ image:https://img.shields.io/badge/license-Apache%202-blue.svg[APL v2,link=http:
 image:https://mybinder.org/badge_logo.svg[Binder,link=https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials]
 image:https://img.shields.io/github/issues/neurallayer/roboquant-notebook[GitHub issues]
 image:https://img.shields.io/github/last-commit/neurallayer/roboquant-notebook[GitHub last commit]
+image:https://img.shields.io/docker/image-size/roboquant/jupyter[Docker Image Size (latest by date)]
+image:https://img.shields.io/docker/v/roboquant/jupyter[Docker Image Version (latest by date)]
+image:https://img.shields.io/docker/pulls/roboquant/jupyter[Docker Pulls]
 
 This repository contains a number of Jupyter notebooks that demonstrate key capabilities of roboquant. The following picture shows one of the many available charts within the notebook environment.
 
 image:http://roboquant.org/img/jupyter-lab.png[Jupyter Lab]
 
-This repository also contains the build script to generate a Docker image that makes it easy to run the Jupyter Notebooks on your local machine. This Docker image is published on Docker Hub, so you actually don't need to build the Docker Image unless you want to make changes.
+This repository also contains the build script to generate a Docker image that makes it easy to run the Jupyter Notebooks on your local machine. This Docker image is published on https://hub.docker.com/r/roboquant/jupyter/tags[Docker Hub] for both Intel and ARM architecture, so you actually don't need to build the Docker Image unless you want to make changes.
 
 You can find out much more about the roboquant at *https://roboquant.org[roboquant.org]*
 

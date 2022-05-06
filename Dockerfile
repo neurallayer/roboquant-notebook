@@ -1,10 +1,9 @@
-# Latest version of base-notebook:lab uses an Ubuntu version that cannot install JRE 17 due to issues when installing
-# Java certificates, so for now we stay on 3.2.9
-FROM jupyter/base-notebook:lab-3.2.9
+# we use the smaller base image as a starting point
+FROM jupyter/base-notebook:lab-3.4.0
 
 USER root
 
-# Install the OpenJDK 17 JRE runtime
+# Install the OpenJDK 17 JRE headless runtime
 RUN apt-get update && apt-get install -y openjdk-17-jre-headless
 
 # The remaining we run under the standard user
@@ -20,13 +19,9 @@ RUN python -m kotlin_kernel add-kernel --name "MEDIUM 4GB" --jvm-arg=-Xmx4G
 RUN python -m kotlin_kernel add-kernel --name "LARGE 8GB" --jvm-arg=-Xmx8G
 RUN python -m kotlin_kernel add-kernel --name "XLARGE 16GB" --jvm-arg=-Xmx16G
 
-# Install the json files for the %use roboquant line magic to work
-# COPY --chown=1000:100 docker/assets/roboquant.json  /opt/conda/lib/python3.9/site-packages/run_kotlin_kernel/libraries/
-
 # Copy the tutorial notebooks and sample data to the home directory
 RUN mkdir -p /home/jovyan/tutorials
 COPY --chown=1000:100 tutorials /home/jovyan/tutorials
-# COPY --chown=1000:100 data /home/jovyan/tutorials/data
 
 # Some theming
 RUN mkdir -p /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/ && \
