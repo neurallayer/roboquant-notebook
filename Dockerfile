@@ -1,5 +1,5 @@
-# we use the smaller base image as a starting point
-FROM jupyter/base-notebook:lab-3.4.0
+# we use the smaller base-notebook image as a starting point
+FROM jupyter/base-notebook:lab-3.4.3
 
 USER root
 
