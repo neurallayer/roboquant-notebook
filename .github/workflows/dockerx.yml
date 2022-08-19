@@ -1,4 +1,4 @@
-name: Deploy multi-platform Docker images
+name: Publish Docker images
 
 on:
   push:
