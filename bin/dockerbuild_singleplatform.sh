@@ -2,7 +2,7 @@
 
 
 # Clean output cells of notebooks
-cd tutorials
+cd notebooks
 jupyter nbconvert --clear-output --inplace *.ipynb
 cd ..
 

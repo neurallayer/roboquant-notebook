@@ -9,5 +9,6 @@ jobs:
       - name: Deploy Stage
         uses: fjogeleit/http-request-action@v1
         with:
-          url: 'https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/tutorials/intro.ipynb'
+          url: 'https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/backtest.ipynb'
           method: 'GET'
+          timeout: 30000

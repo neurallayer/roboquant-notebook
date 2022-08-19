@@ -19,9 +19,9 @@ RUN python -m kotlin_kernel add-kernel --name "MEDIUM 4GB" --jvm-arg=-Xmx4G
 RUN python -m kotlin_kernel add-kernel --name "LARGE 8GB" --jvm-arg=-Xmx8G
 RUN python -m kotlin_kernel add-kernel --name "XLARGE 16GB" --jvm-arg=-Xmx16G
 
-# Copy the tutorial notebooks and sample data to the home directory
-RUN mkdir -p /home/jovyan/tutorials
-COPY --chown=1000:100 tutorials /home/jovyan/tutorials
+# Copy the notebooks to the home directory
+RUN mkdir -p /home/jovyan/notebooks
+COPY --chown=1000:100 notebooks /home/jovyan/notebooks
 
 # Some theming
 RUN mkdir -p /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/ && \

@@ -1,8 +1,5 @@
 [[ ! -f "LICENSE" ]] && echo "run the dockerbuild.sh script from the project root directory like this: ./bin/dockerbuild.sh" && exit -1
 
-# Traditional docker build
-# docker build -t roboquant/jupyter:latest .
-
 # New Docker builder that supports building for multi-architectures
 # Run the following 3 lines once to enable the new builder
 # docker buildx create --name mybuilder
@@ -10,7 +7,7 @@
 # docker buildx inspect --bootstrap
 
 # Clean output cells of notebooks
-cd tutorials
+cd notebooks
 jupyter nbconvert --clear-output --inplace *.ipynb
 cd ..
 

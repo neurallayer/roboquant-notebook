@@ -6,5 +6,5 @@ out
 *.iml
 *.avro
 target/
-tutorials/TwsApi.jar
+notebooks/TwsApi.jar
 .DS_STORE

@@ -7,5 +7,5 @@ out
 target/
 binder/
 .github/
-tutorials/TwsApi.jar
+notebooks/TwsApi.jar
 .DS_STORE
