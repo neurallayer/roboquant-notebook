@@ -42,7 +42,7 @@ See link:/docker/README.adoc[Docker README] for more options and details.
 
 The following notebooks are included and if you click on one of the links below, the notebook will be automatically open on MyBinder.org and ready to be run:
 
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/backtest.ipynb[backtest.ipynb] - How to run a simple backtest, this might me a good starting place if you are new to _roboquant_
+* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/backtest.ipynb[backtest.ipynb] - How to run a simple backtest, this might be a good starting place if you are new to _roboquant_
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/charts.ipynb[charts.ipynb] - Shows the charting capabilities of roboquant
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/alpaca.ipynb[alpaca.ipynb] - Shows the integration with Alpaca broker
 * https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/binance.ipynb[binance.ipynb] - Shows the integration with Binance crypto exchange

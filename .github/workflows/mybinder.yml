@@ -1,14 +1,12 @@
-name: Warmup MyBinder.org
-
+name: Binder
 on: [push]
 
 jobs:
-  deployment:
+  Create-MyBinderOrg-Cache:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy Stage
-        uses: fjogeleit/http-request-action@v1
+      - name: cache binder build on mybinder.org
+        uses: jupyterhub/repo2docker-action@master
         with:
-          url: 'https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/backtest.ipynb'
-          method: 'GET'
-          timeout: 30000
+          NO_PUSH: true
+          MYBINDERORG_TAG: ${{ github.event.ref }} # This builds the container on mybinder.org with the branch that was pushed on.
