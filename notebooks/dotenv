@@ -2,7 +2,7 @@
 # Many data providers and brokers require authentication and this is one of the ways to provide those credentials
 #
 # If you store credentials in here, make sure other people don't have access to it and for example don't version control
-# it to a public repo by mistake.
+# it to a public repo by mistake. One way is to put to place this file at ~/.roboquant/.env
 
 # Sample entry
 sample.public.key=some_key_value
@@ -27,6 +27,7 @@ sample.secret.key=another_key_value
 # oanda.account=your_account
 # oanda.key=your_key
 
-
+# Uncomment the following line and change the value for Polygon.io access
+# polygon.key=your_key
 
 
