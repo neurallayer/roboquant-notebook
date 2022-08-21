@@ -4,10 +4,10 @@ The roboquant docker image includes the following software:
 - Jupyter notebook image (`jupyter/base-notebook`) as the base image
 - Kotlin kernel for Jupyter
 - OpenJDK 17 runtime
-- Howto notebooks
+- Several Howto notebooks
 
 == Usage
-You can start using Jupyter Lab straight out-of-the-box by running the following command:
+You can start using _roboquant_ with Jupyter Lab straight out-of-the-box by running the following command:
 
 [source,shell]
 ----
@@ -15,6 +15,7 @@ docker run --rm -p 8888:8888 roboquant/jupyter
 ----
 
 Then open the url that appears in your terminal in your browser to try it out. The `./notebooks` directory contains several notebooks that provide an introduction into roboquant.
+
 
 == Interactive Brokers only
 If you also want test the Interactive Brokers Notebook that is included, it is important to realize that the notebook requires access to a (local) running instance of Trader Workstation or IB Gateway (recommended).
@@ -26,7 +27,7 @@ For the docker container to have this network accessible, you can use the `--net
 docker run --rm -p 8888:8888 --network=host -roboquant/jupyter
 ----
 
-You will also have to manually copy the required client jar file after starting a notebook (due to license constraints). See the `Interactive Brokers notebook` for additional details.
+You will also have to manually copy the required client jar file after starting a notebook (due to license constraints). See the `ibkr` notebook for more instructions.
 
 == Build Docker Image
 You can build the Docker image from the source:
@@ -41,11 +42,11 @@ You can build the Docker image from the source:
 
 The build script has been tested and used with Docker Desktop. By default, this script builds an image for both Intel and ARM64 (Apple Silicon) architectures using the new Docker builder `buildx`. See the `dockerbuild.sh` script if you didn't enable the new builder yet.
 
-Please note the `dockerbuild.sh` script will also push the image to a repository. If you just want to test the docker build on your local machine, you can use the following instead:
+Please note the `dockerbuild.sh` script will also push the image to the Docker Hub repository. If you just want to test the docker build on your local machine, you can use the following instead:
 
 [source,shell]
 ----
 ./bin/dockerbuild_singleplatform.sh
 ----
 
-Right now, only shell scripts are provided to build and start notebooks. So if you're on Windows you either have to use WSL or run the commands in the shell script from the command line manually.
+NOTE: currently, only shell scripts are provided to build and start notebooks. So if you're on Windows you either have to use WSL or run the commands in the shell script from the command line manually.

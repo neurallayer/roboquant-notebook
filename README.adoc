@@ -30,6 +30,7 @@ If you prefer, you can run the notebooks without installing anything on your loc
 
 NOTE: It might take some time before the MyBinder environment is set up and you can run the notebooks. This is mainly due to the limited resources that these free environments have available and the fact that the Kotlin kernel isn't included by default and needs to be build first.
 
+
 Alternatively you can run a Docker container on your local machine that has all the notebooks included and will automatically spin-up a Jupyter Lab environment:
 
 [source,shell]
@@ -37,7 +38,7 @@ Alternatively you can run a Docker container on your local machine that has all 
 docker run --rm -p 8888:8888 roboquant/jupyter
 ----
 
-See link:/docker/README.adoc[Docker README] for more options and details.
+See link:bin/README.adoc[Docker README] for more options and details.
 
 == Included Notebooks
 
