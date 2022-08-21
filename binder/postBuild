@@ -1,9 +1,9 @@
 mkdir -p /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/ && \
         echo '{ "theme":"JupyterLab Dark"}' > /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings
 
-# Run one notebook to pre-load some libraries as part of the build
-jupyter nbconvert --to notebook --execute notebooks/backtest.ipynb
-rm backtest.nbconvert.ipynb
+# Run the empty notebook to pre-load some libraries as part of the build
+jupyter nbconvert --to notebook --execute notebooks/empty.ipynb
+rm notebooks/empty.nbconvert.ipynb
 
 rm -rf .github
 rm -rf binder
