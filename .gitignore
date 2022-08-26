@@ -3,6 +3,7 @@ build/
 .gradle/
 out
 .ipynb_checkpoints
+*.nbconvert.ipynb
 *.iml
 *.avro
 target/

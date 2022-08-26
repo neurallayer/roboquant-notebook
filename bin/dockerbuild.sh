@@ -1,4 +1,4 @@
-[[ ! -f "LICENSE" ]] && echo "run the dockerbuild.sh script from the project root directory like this: ./bin/dockerbuild.sh" && exit -1
+[[ ! -f "LICENSE" ]] && echo "run the dockerbuild.sh script from the project root directory like this: ./bin/dockerbuild.sh" && exit 1
 
 # New Docker builder that supports building for multi-architectures
 # Run the following 3 lines once to enable the new builder
