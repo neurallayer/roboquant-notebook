@@ -9,3 +9,4 @@ out
 target/
 notebooks/TwsApi.jar
 .DS_STORE
+error.log

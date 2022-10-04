@@ -3,7 +3,7 @@
 [[ ! -f "LICENSE" ]] && echo "run the script from the project root directory like this: ./bin/run_notebooks.sh" && exit 1
 
 rm -f notebooks/*.nbconvert.ipynb
-rm notebooks/error.log
+rm -f notebooks/error.log
 
 for notebook in backtest charts policies strategies tech-analysis
 do
