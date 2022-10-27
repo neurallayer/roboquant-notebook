@@ -41,17 +41,23 @@ See link:bin/README.adoc[Docker README] for more options and details.
 
 == Included Notebooks
 
-The following notebooks are included and if you click on one of the links below, the notebook will be automatically open on MyBinder.org and ready to be run:
+If you don't want to install anything on your local machine, you can try any of the included notebooks right now by clicking on one fo the two following links:
 
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/backtest.ipynb[backtest.ipynb] - How to run a different types of back tests. This is also a good starting place if you are new to _roboquant_
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/charts.ipynb[charts.ipynb] - Shows the charting capabilities of roboquant
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/alpaca.ipynb[alpaca.ipynb] - Shows the integration with Alpaca broker
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/binance.ipynb[binance.ipynb] - Shows the integration with Binance crypto exchange
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/crypto.ipynb[crypto.ipynb] - Shows the integration with many crypto exchange using the XChange library
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/strategies.ipynb[strategies.ipynb] - How to develop your own strategies
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/policies.ipynb[policies.ipynb] - How to develop a custom policy
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/iex.ipynb[iex.ipynb] - Shows the integration with IEX Cloud data provider
-* https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/tech-analysis.ipynb[tech-analysis.ipynb] - How to develop technical analysis based strategies
+1. https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/[Jupyter Lab] environment  on MyBinder.org
+
+2. https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=tree/notebooks/[Jupyter Classic Notebook] environment on MyBinder.org
+
+These are the how-to notebooks that are included:
+
+* backtest.ipynb - How to run a different types of back tests. This is also a good starting place if you are new to _roboquant_
+* charts.ipynb - Shows the charting capabilities of roboquant
+* alpaca.ipynb - Shows the integration with Alpaca broker
+* binance.ipynb - Shows the integration with Binance crypto exchange
+* crypto.ipynb - Shows the integration with many crypto exchange using the XChange library
+* strategies.ipynb - How to develop your own strategies
+* policies.ipynb - How to develop a custom policy
+* iex.ipynb - Shows the integration with IEX Cloud data provider
+* tech-analysis.ipynb - How to develop technical analysis based strategies
 * dotenv - Not a notebook but an example environment file that can hold the keys and secrets which are often required to connect to third party data providers and brokers.
 
 

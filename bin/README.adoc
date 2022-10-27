@@ -42,7 +42,7 @@ You can build the Docker image from the source:
 
 The build script has been tested and used with Docker Desktop. By default, this script builds an image for both Intel and ARM64 (Apple Silicon) architectures using the new Docker builder `buildx`. See the `dockerbuild.sh` script if you didn't enable the new builder yet.
 
-Please note the `dockerbuild.sh` script will also push the image to the Docker Hub repository. If you just want to test the docker build on your local machine, you can use the following instead:
+Please note the `dockerbuild.sh` script will also push the image to the Docker Hub repository. If you just want to test the docker build on your local machine, you can use the following script instead:
 
 [source,shell]
 ----
