@@ -1,5 +1,5 @@
 # we use the smaller base-notebook image as a starting point
-FROM jupyter/base-notebook:lab-3.4.4
+FROM jupyter/base-notebook:2022-10-26
 
 # Install OpenJDK as root
 USER root
@@ -13,20 +13,23 @@ USER 1000
 # Install the Kotlin kernel in the Jupyter environment
 # RUN conda install -y -c jetbrains-dev kotlin-jupyter-kernel
 RUN conda install -y -c jetbrains kotlin-jupyter-kernel
+# RUN pip install kotlin-jupyter-kernel
 
-# Make additional Kotlin kernels available with different memory profiles
-RUN python -m kotlin_kernel add-kernel --name "SMALL 1GB" --jvm-arg=-Xmx1G
-RUN python -m kotlin_kernel add-kernel --name "MEDIUM 4GB" --jvm-arg=-Xmx4G
-RUN python -m kotlin_kernel add-kernel --name "LARGE 8GB" --jvm-arg=-Xmx8G
-RUN python -m kotlin_kernel add-kernel --name "XLARGE 16GB" --jvm-arg=-Xmx16G
+# Make additional Kotlin kernels available with different fixed memory profiles
+RUN python -m kotlin_kernel add-kernel --name "Small_0.5GB" --jvm-arg=-Xmx512M
+RUN python -m kotlin_kernel add-kernel --name "Medium_2G" --jvm-arg=-Xmx2G
+RUN python -m kotlin_kernel add-kernel --name "Large_8GB" --jvm-arg=-Xmx8G
 
 # Copy the notebooks to the home directory
 RUN mkdir -p /home/jovyan/notebooks
 COPY --chown=1000:100 notebooks /home/jovyan/notebooks
 
 # Set default to dark theming
-RUN mkdir -p /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/ && \
-        echo '{ "theme":"JupyterLab Dark"}' > /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings
+# RUN mkdir -p /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/ && \
+#        echo '{ "theme":"JupyterLab Dark"}' > /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings
+
+
+EXPOSE 8888
 
 
 

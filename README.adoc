@@ -63,10 +63,9 @@ Check the instructions in the link:/bin/README.adoc[README] in the bin directory
 == Contributions
 Contributions are greatly appreciated. This can be a fix or enhancement to one of the existing notebooks or a completely new notebook. The best way to do so is to raise an issue on GitHub and afterwards a PR.
 
-Before checking-in, make sure the notebooks don't have any cell output, for example by running the following commands:
+Before checking-in, make sure the notebooks don't have any cell output, for example by running the following command from the project root directory.
 
 [source,shell]
 ----
-cd notebooks
-jupyter nbconvert --clear-output --inplace *.ipynb
+./bin/clean_notbooks.sh
 ----
