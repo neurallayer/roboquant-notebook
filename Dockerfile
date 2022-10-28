@@ -12,8 +12,8 @@ USER 1000
 
 # Install the Kotlin kernel in the Jupyter environment
 # RUN conda install -y -c jetbrains-dev kotlin-jupyter-kernel
-RUN conda install -y -c jetbrains kotlin-jupyter-kernel
-# RUN pip install kotlin-jupyter-kernel
+# RUN conda install -y -c jetbrains kotlin-jupyter-kernel=0.11.0.170
+RUN pip install kotlin-jupyter-kernel==0.11.0.170
 
 # Make additional Kotlin kernels available with different fixed memory profiles
 RUN python -m kotlin_kernel add-kernel --name "Small_0.5GB" --jvm-arg=-Xmx512M
@@ -24,12 +24,6 @@ RUN python -m kotlin_kernel add-kernel --name "Large_8GB" --jvm-arg=-Xmx8G
 RUN mkdir -p /home/jovyan/notebooks
 COPY --chown=1000:100 notebooks /home/jovyan/notebooks
 
-# Set default to dark theming
-# RUN mkdir -p /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/ && \
-#        echo '{ "theme":"JupyterLab Dark"}' > /home/jovyan/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings
-
-
-EXPOSE 8888
 
 
 
