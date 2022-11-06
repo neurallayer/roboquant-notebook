@@ -7,7 +7,7 @@ The roboquant docker image includes the following software:
 - Several Howto notebooks
 
 == Usage
-You can start using _roboquant_ with Jupyter Lab straight out-of-the-box by running the following command:
+You can start using _roboquant_ with Jupyter notebooks straight out-of-the-box by running the following command:
 
 [source,shell]
 ----
@@ -50,3 +50,6 @@ Please note the `dockerbuild.sh` script will also push the image to the Docker H
 ----
 
 NOTE: currently, only shell scripts are provided to build and start notebooks. So if you're on Windows you either have to use WSL or run the commands in the shell script from the command line manually.
+
+== MyBinder.org
+In order to start _roboquant_ notebooks quickly on MyBinder.org, there is a `binder directory included with a `Dockerfile` that retrieves the latest image from Docker Hub. This avoids that MyBinder.org has to build the image from scratch and has prolonged startup times as a consequence.
