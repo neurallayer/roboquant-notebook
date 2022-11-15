@@ -13,8 +13,8 @@ sample.secret.key=another_key_value
 # alpaca.secret.key=your_api_secret_key
 
 # Uncomment the following two lines and change values for IEX Cloud access
-# iex.public.key=your_publishable_key
-# iex.secret.key=your_secret_key
+# iexcloud.public.key=your_publishable_key
+# iexcloud.secret.key=your_secret_key
 
 # Uncomment the following line and change the value for Alpha Vantage access
 # alphavantage.key=your_api_key
