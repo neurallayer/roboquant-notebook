@@ -44,9 +44,9 @@ See link:bin/README.adoc[Docker README] for more options and details.
 If you don't want to install anything on your local machine, you can try any of the included notebooks right now by clicking on one fo the two following links:
 
 
-. https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=tree/notebooks/[Jupyter Classic Notebook^] environment on MyBinder.org
+. https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=tree/notebooks/[Jupyter Classic,role=external,window=_blank] environment on MyBinder.org
 
-. https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/[Jupyter Lab^] environment  on MyBinder.org
+. https://mybinder.org/v2/gh/neurallayer/roboquant-notebook/main?urlpath=lab/tree/notebooks/[Jupyter Lab,role=external,window=_blank] environment  on MyBinder.org
 
 
 These are the how-to notebooks that are included:
@@ -62,9 +62,9 @@ These are the how-to notebooks that are included:
 * tech-analysis.ipynb - How to develop technical analysis based strategies
 * empty.ipynb - Empty notebook that only includes the `%use` statement
 * dotenv - Not a notebook but an example environment file that can hold the keys and secrets which are often required to connect to third party data providers and brokers.
-
-
-NOTE: the `ibkr` (Interactive Brokers) notebook cannot be run on MyBinder.org since it requires access to a (local) running Trader Workstation or IB Gateway. You can however run it on a local installed Jupyter Notebook.
+* ibkr.ipynb - Shows how to integrate with Interactive Brokers
++
+NOTE: the `ibkr` notebook cannot be run on MyBinder.org since it requires access to a (local) running Trader Workstation or IB Gateway. You can however run it on a local installed Jupyter Notebook.
 
 == Build Docker Image
 Check the instructions in the link:/bin/README.adoc[README] in the bin directory on how to build a Docker image from source.
