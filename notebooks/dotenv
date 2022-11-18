@@ -1,12 +1,13 @@
 # This property file contains environment settings that will be made available in roboquant
-# Many data providers and brokers require authentication and this is one of the ways to provide those credentials
+# Many data feed providers and brokers require one or more keys to be able to access their APIs, and this is one of
+# the ways to provide those credentials.
 #
-# If you store credentials in here, make sure other people don't have access to it and for example don't version control
-# it to a public repo by mistake. One way is to put to place this file at ~/.roboquant/.env
+# If you store credentials in here, make sure other people don't have access to it and don't version control
+# it to a public repo by mistake. One solution is to place this file at ~/.roboquant/.env
 
 # Sample entry
-sample.public.key=some_key_value
-sample.secret.key=another_key_value
+# sample.public.key=some_key_value
+# sample.secret.key=another_key_value
 
 # Uncomment the following two lines and change the values for Alpaca API access
 # alpaca.public.key=your_api_key_id
