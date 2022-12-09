@@ -4,8 +4,8 @@ FROM jupyter/base-notebook:2022-11-14
 # Install OpenJDK as root
 USER root
 
-# Install the OpenJDK 17 JRE headless runtime
-RUN apt-get update && apt-get install -y openjdk-17-jre-headless
+# Install the OpenJDK 17 JRE headless runtime and libgomp
+RUN apt-get update && apt-get install -y openjdk-17-jre-headless libgomp1
 
 # The remaining we run under the standard non-privileged user
 USER 1000
