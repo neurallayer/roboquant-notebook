@@ -59,6 +59,7 @@ These are the how-to notebooks that are included:
 * strategies.ipynb - How to develop your own strategies
 * policies.ipynb - How to develop a custom policy
 * tech-analysis.ipynb - How to develop technical analysis based strategies
+* xgboost.ipynb - How to develop a machine learning based strategy using XGBoost
 * empty.ipynb - Empty notebook that just includes the `%use` statement
 * dotenv - Not a notebook but an example environment file that can hold the keys and secrets which are often required to connect to third party data providers and brokers.
 * ibkr.ipynb - Shows how to integrate with Interactive Brokers
