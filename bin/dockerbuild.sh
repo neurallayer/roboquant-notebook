@@ -11,4 +11,4 @@ rm -f notebooks/*.nbconvert.ipynb
 jupyter nbconvert --clear-output --inplace notebooks/*.ipynb
 
 # Build for AMD64 and ARM64 platforms
-docker buildx build --platform linux/amd64,linux/arm64/v8 -t roboquant/jupyter:0.11.0.208 --push .
+docker buildx build --platform linux/amd64,linux/arm64/v8 -t roboquant/jupyter:1.0.0 --push .

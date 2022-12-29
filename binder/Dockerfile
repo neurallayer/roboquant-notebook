@@ -1,1 +1,1 @@
-FROM roboquant/jupyter:0.11.0.208
+FROM roboquant/jupyter:1.0.0
