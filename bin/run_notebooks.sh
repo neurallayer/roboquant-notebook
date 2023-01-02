@@ -5,7 +5,7 @@
 rm -f notebooks/*.nbconvert.ipynb
 rm -f notebooks/error.log
 
-for notebook in backtest charts empty policies strategies tech-analysis
+for notebook in backtest charts empty policies strategies tech-analysis basic
 do
   echo "****** running $notebook ********" >> notebooks/error.log
   jupyter nbconvert --to notebook --execute "./notebooks/$notebook.ipynb" 2>> notebooks/error.log
