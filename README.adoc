@@ -51,6 +51,7 @@ These are the how-to notebooks that are included:
 * backtest.ipynb - How to run a different types of back tests. This is also a good starting place if you are new to _roboquant_
 * charts.ipynb - Shows the charting capabilities of roboquant
 * alpaca.ipynb - Shows the integration with Alpaca broker
+* yahoo.ipynb - Shows how to use Yahoo Finance data to run a back test
 * binance.ipynb - Shows the integration with Binance crypto exchange
 * crypto.ipynb - Shows the integration with many crypto exchange using the XChange library
 * strategies.ipynb - How to develop your own strategies
