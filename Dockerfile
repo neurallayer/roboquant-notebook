@@ -24,8 +24,8 @@ RUN python -m kotlin_kernel add-kernel --name "Large_8GB" --jvm-arg=-Xmx8G
 RUN mkdir -p /home/jovyan/notebooks
 COPY --chown=1000:100 notebooks /home/jovyan/notebooks
 
-# Run the empty notebook to pre-load some libraries and files on the image
-RUN jupyter nbconvert --to notebook --execute notebooks/empty.ipynb && rm -f notebooks/*.nbconvert.ipynb
+# Run the preload notebook to load some libraries and historic data on the image
+RUN jupyter nbconvert --to notebook --execute notebooks/preload.ipynb && rm -f notebooks/preload*.ipynb
 
 
 
