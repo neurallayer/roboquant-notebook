@@ -1,5 +1,5 @@
 # we use the smaller base-notebook image as a starting point
-FROM jupyter/base-notebook:2022-11-14
+FROM jupyter/base-notebook:2023-02-20
 
 # Install OpenJDK as root
 USER root
