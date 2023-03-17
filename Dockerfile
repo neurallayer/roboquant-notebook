@@ -1,5 +1,5 @@
 # we use the smaller base-notebook image as a starting point
-FROM jupyter/base-notebook:2023-02-28
+FROM jupyter/base-notebook:2023-03-13
 
 # Install OpenJDK as root
 USER root
@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y openjdk-17-jre-headless libgomp1
 USER 1000
 
 # Install the Kotlin kernel in the Jupyter environment
-RUN pip install kotlin-jupyter-kernel==0.11.0.255
+# RUN pip install kotlin-jupyter-kernel==0.11.0.255
+RUN pip install -i https://test.pypi.org/simple/ kotlin-jupyter-kernel==0.11.0.332
 
 # Make additional Kotlin kernels available with different fixed memory profiles
 RUN python -m kotlin_kernel add-kernel --name "Small_0.5GB" --jvm-arg=-Xmx512M

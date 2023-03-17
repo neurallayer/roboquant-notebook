@@ -5,4 +5,4 @@ rm -f notebooks/*.nbconvert.ipynb
 jupyter nbconvert --clear-output --inplace notebooks/*.ipynb
 
 # Build for local platform only
-docker build -t roboquant/jupyter:1.1.1 .
+docker build -t roboquant/jupyter:1.2.0 -t roboquant/jupyter:latest .
