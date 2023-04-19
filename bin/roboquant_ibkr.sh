@@ -1,1 +1,0 @@
-docker run --rm -p 8888:8888 --network=host -e roboquant/jupyter
