@@ -19,9 +19,9 @@ Then open the url that appears in your terminal in your browser to try it out. T
 For more details, see https://roboquant.org/tutorial/install.html
 
 == Interactive Brokers only
-If you also want test the Interactive Brokers Notebook that is included, it is important to realize that the notebook requires access to a (local) running instance of Trader Workstation or IB Gateway (recommended).
+If you also want to run the Interactive Brokers Notebook that is included, it is important to realize that the IBKR client running inside the notebook requires access to a (host) running instance of Trader Workstation or IB Gateway (recommended).
 
-One way to accomplish this, is to connect to `host.docker.internal` instead of `localhost`. You can set the property as follows in your notebooks:
+One way to accomplish this, is to connect to `host.docker.internal` instead of `localhost`. You can set the property as follows in your notebook:
 
 [source,kotlin]
 ----
