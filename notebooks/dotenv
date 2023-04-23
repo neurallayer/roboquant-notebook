@@ -23,10 +23,6 @@
 # binance.public.key=your_key
 # binance.secret.key=you_secret
 
-# Uncomment the following two lines and change the values for OANDA access
-# oanda.account=your_account
-# oanda.key=your_key
-
 # Uncomment the following line and change the value for Polygon.io access
 # polygon.key=your_key
 
