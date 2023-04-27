@@ -1,1 +1,1 @@
-FROM roboquant/jupyter:1.3.1
+FROM roboquant/jupyter:1.4.0
