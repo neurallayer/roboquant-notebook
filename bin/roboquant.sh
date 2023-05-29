@@ -1,1 +1,1 @@
-docker run --rm -p 8888:8888 roboquant/jupyter
+docker run -p 8888:8888 roboquant/jupyter
