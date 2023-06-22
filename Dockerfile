@@ -15,7 +15,7 @@ USER 1000
 
 # Install the Kotlin kernel in the Jupyter environment
 # RUN pip install kotlin-jupyter-kernel==0.11.0.255
-RUN pip install -i https://test.pypi.org/simple/ kotlin-jupyter-kernel==0.11.0.393
+RUN pip install -i https://test.pypi.org/simple/ kotlin-jupyter-kernel==0.12.0.5
 
 # Make additional Kotlin kernels available with different memory profiles
 RUN python -m kotlin_kernel add-kernel --name "Small_0.5GB" --jvm-arg=-Xmx512M

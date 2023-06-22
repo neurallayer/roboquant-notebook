@@ -17,7 +17,7 @@ image:https://img.shields.io/docker/image-size/roboquant/jupyter[Docker Image Si
 image:https://img.shields.io/docker/v/roboquant/jupyter[Docker Image Version (latest by date)]
 image:https://img.shields.io/docker/pulls/roboquant/jupyter[Docker Pulls]
 
-This repository contains a number of Jupyter notebooks that demonstrate howto use _roboquant_. The focus of each notebook is on a specific task, like howto visualize results or create technical analysis based strategies.
+This repository contains a number of Jupyter notebooks that demonstrate how to use _roboquant_. The focus of each notebook is on a specific task, like how to visualize results or create technical-analysis based strategies.
 
 image:http://roboquant.org/img/jupyter-lab.png[Jupyter Lab]
 
@@ -30,7 +30,7 @@ If you prefer, you can run the notebooks without installing anything on your loc
 
 NOTE: It might take some time before the MyBinder environment is set up, and you can run the notebooks. This is mainly due to the limited resources that these free environments have available and the fact that the Kotlin kernel isn't included by default and needs to be build first.
 
-Alternatively you can run a Docker container on your local machine that has all the notebooks included and will automatically spin-up a Jupyter notebook environment:
+Alternatively, you can run a Docker container on your local machine that has all the notebooks included and will automatically spin-up a Jupyter notebook environment:
 
 [source,shell]
 ----
@@ -48,22 +48,22 @@ If you don't want to install anything on your local machine, you can try any of 
 
 These are the how-to notebooks that are included:
 
-* backtest.ipynb - How to run a different types of back tests. This is also a good starting place if you are new to _roboquant_
-* charts.ipynb - Shows the charting capabilities of roboquant
-* alpaca.ipynb - Shows the integration with Alpaca broker
-* binance.ipynb - Shows the integration with Binance crypto exchange
-* crypto.ipynb - Shows the integration with many crypto exchanges using the XChange library
-* strategies.ipynb - How to develop your own strategies
-* policies.ipynb - How to develop a custom policy
-* discord.ipynb - ow to develop a Discord bot
-* talib.ipynb - How to develop technical analysis based strategies using the `TaLib` library
-* ta4j.ipynb - How to develop technical analysis based strategies using teh `Ta4j` library
-* xgboost.ipynb - How to develop a machine learning based strategy using XGBoost
-* forex.ipynb - How to run back-tests for Forex trading
-* empty.ipynb - Empty notebook that just includes the `%use` statement
-* basic.ipynb - Notebook with a simple custom strategy that can serve as a starting point for developing your own strategy
-* dotenv - Not a notebook but an example environment file that can hold the keys and secrets which are often required to connect to third party data providers and brokers.
-* ibkr.ipynb - Shows how to integrate with Interactive Brokers
+* backtest.ipynb — How to run a different types of back tests. This is also a good starting place if you are new to _roboquant_
+* charts.ipynb — Shows the charting capabilities of roboquant
+* alpaca.ipynb — Shows the integration with Alpaca broker
+* binance.ipynb — Shows the integration with Binance crypto exchange
+* crypto.ipynb — Shows the integration with many crypto exchanges using the XChange library
+* strategies.ipynb — How to develop your own strategies
+* policies.ipynb — How to develop a custom policy
+* discord.ipynb — ow to develop a Discord bot
+* talib.ipynb — How to develop technical analysis based strategies using the `TaLib` library
+* ta4j.ipynb — How to develop technical analysis based strategies using teh `Ta4j` library
+* xgboost.ipynb — How to develop a machine learning based strategy using XGBoost
+* forex.ipynb — How to run back-tests for Forex trading
+* empty.ipynb — Empty notebook that just includes the `%use` statement
+* basic.ipynb — Notebook with a simple custom strategy that can serve as a starting point for developing your own strategy
+* dotenv — Not a notebook but an example environment file that can hold the keys and secrets which are often required to connect to third party data providers and brokers.
+* ibkr.ipynb — Shows how to integrate with Interactive Brokers
 +
 NOTE: the `ibkr` notebook cannot be run on MyBinder.org since it requires access to a (local) running Trader Workstation or IB Gateway. You can, however, run it on a local installed Jupyter Notebook.
 
@@ -73,7 +73,7 @@ Check the instructions in the link:/bin/README.adoc[README] in the bin directory
 == Contributions
 Contributions are greatly appreciated. This can be a fix or enhancement to one of the existing notebooks or a completely new notebook. The best way to do so is to raise an issue on GitHub and afterwards a PR.
 
-Before checking-in, make sure the notebooks don't have any cell output, for example by running the following command from the project root directory.
+Before checking-in, make sure the notebooks don't have any cell output, for example, by running the following command from the project root directory.
 
 [source,shell]
 ----
