@@ -17,7 +17,7 @@ image:https://img.shields.io/docker/image-size/roboquant/jupyter[Docker Image Si
 image:https://img.shields.io/docker/v/roboquant/jupyter[Docker Image Version (latest by date)]
 image:https://img.shields.io/docker/pulls/roboquant/jupyter[Docker Pulls]
 
-This repository contains a number of Jupyter notebooks that demonstrate how to use _roboquant_. The focus of each notebook is on a specific task, like how to visualize results or create technical-analysis based strategies.
+This repository contains a number of Jupyter notebooks that demonstrate how to use _roboquant_. The focus of each notebook is on a specific task, like how to visualize results or create strategies based on technical indicators.
 
 image:http://roboquant.org/img/jupyter-lab.png[Jupyter Lab]
 
@@ -48,7 +48,7 @@ If you don't want to install anything on your local machine, you can try any of 
 
 These are the how-to notebooks that are included:
 
-* backtest.ipynb — How to run a different types of back tests. This is also a good starting place if you are new to _roboquant_
+* backtest.ipynb — How to run different types of back tests. This is also a good starting place if you are new to _roboquant_
 * charts.ipynb — Shows the charting capabilities of roboquant
 * alpaca.ipynb — Shows the integration with Alpaca broker
 * binance.ipynb — Shows the integration with Binance crypto exchange
@@ -56,9 +56,9 @@ These are the how-to notebooks that are included:
 * strategies.ipynb — How to develop your own strategies
 * policies.ipynb — How to develop a custom policy
 * discord.ipynb — ow to develop a Discord bot
-* talib.ipynb — How to develop technical analysis based strategies using the `TaLib` library
-* ta4j.ipynb — How to develop technical analysis based strategies using teh `Ta4j` library
-* xgboost.ipynb — How to develop a machine learning based strategy using XGBoost
+* talib.ipynb — How to develop technical analysis strategies using the `TaLib` library
+* ta4j.ipynb — How to develop technical analysis strategies using teh `Ta4j` library
+* xgboost.ipynb — How to develop strategies using XGBoost
 * forex.ipynb — How to run back-tests for Forex trading
 * empty.ipynb — Empty notebook that just includes the `%use` statement
 * basic.ipynb — Notebook with a simple custom strategy that can serve as a starting point for developing your own strategy
