@@ -1,0 +1,1 @@
+FROM roboquant/jupyter:1.6.0
