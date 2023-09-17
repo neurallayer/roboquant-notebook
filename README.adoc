@@ -58,7 +58,6 @@ These are the how-to notebooks that are included:
 * discord.ipynb — ow to develop a Discord bot
 * talib.ipynb — How to develop technical analysis strategies using the `TaLib` library
 * ta4j.ipynb — How to develop technical analysis strategies using teh `Ta4j` library
-* xgboost.ipynb — How to develop strategies using XGBoost
 * forex.ipynb — How to run back-tests for Forex trading
 * empty.ipynb — Empty notebook that just includes the `%use` statement
 * basic.ipynb — Notebook with a simple custom strategy that can serve as a starting point for developing your own strategy

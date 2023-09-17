@@ -5,7 +5,7 @@ FROM jupyter/base-notebook:2023-04-24
 USER root
 
 # Install the OpenJDK 17 JRE headless runtime and libgomp
-RUN apt-get update && apt-get install -y openjdk-17-jre-headless libgomp1
+RUN apt-get update && apt-get install -y openjdk-17-jre-headless
 
 # Disable announcement pop-ups
 RUN jupyter labextension disable "@jupyterlab/apputils-extension:announcements"
@@ -15,7 +15,7 @@ USER 1000
 
 # Install the Kotlin kernel in the Jupyter environment
 # RUN pip install kotlin-jupyter-kernel==0.11.0.255
-RUN pip install -i https://test.pypi.org/simple/ kotlin-jupyter-kernel==0.12.0.29
+RUN pip install -i https://test.pypi.org/simple/ kotlin-jupyter-kernel==0.12.0.56
 
 # Make additional Kotlin kernels available with different memory profiles
 RUN python -m kotlin_kernel add-kernel --name "Small_0.5GB" --jvm-arg=-Xmx512M

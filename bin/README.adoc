@@ -3,7 +3,7 @@
 The roboquant docker image includes the following software:
 - Jupyter notebook image (`jupyter/base-notebook`) as the base image
 - Kotlin kernel for Jupyter
-- OpenJDK 17 runtime and lib gomp1 (required for XGBoost)
+- OpenJDK 17 runtime
 - Several Howto notebooks
 
 == Usage
