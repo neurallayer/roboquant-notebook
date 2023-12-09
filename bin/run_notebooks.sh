@@ -5,7 +5,7 @@
 rm -f notebooks/*.nbconvert.ipynb
 rm -f notebooks/error.log
 
-for notebook in preload backtest charts empty policies strategies talib ta4j basic forex dataframes
+for notebook in preload backtest charts empty policies strategies talib ta4j basic forex dataframes optimization
 do
   echo "****** running $notebook ********" >> notebooks/error.log
   jupyter nbconvert --to notebook --execute "./notebooks/$notebook.ipynb" 2>> notebooks/error.log

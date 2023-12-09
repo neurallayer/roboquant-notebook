@@ -14,9 +14,9 @@ You can start using _roboquant_ with Jupyter notebooks straight out-of-the-box b
 docker run -p 8888:8888 roboquant/jupyter
 ----
 
-Then open the url that appears in your terminal in your browser to try it out. The `./notebooks` directory contains several notebooks that provide an introduction into roboquant.
+Then open the url that appears in your terminal in your browser to try it out. The `./notebooks` directory contains several notebooks that provide an introduction into _roboquant_.
 
-For more details, see https://roboquant.org/tutorial/install.html
+For more details, see also https://roboquant.org/tutorial/install.html
 
 == Interactive Brokers only
 If you also want to run the Interactive Brokers Notebook that is included, it is important to realize that the IBKR client running inside the notebook requires access to a (host) running instance of Trader Workstation or IB Gateway (recommended).
@@ -41,16 +41,20 @@ You can build the Docker image from the source:
 ./bin/dockerbuild.sh
 ----
 
-The build script has been tested and used with Docker Desktop. By default, this script builds an image for both Intel and ARM64 (Apple Silicon) architectures using the new Docker builder `buildx`. See the `dockerbuild.sh` script if you didn't enable the new builder yet.
+The build script has been tested and used with Docker Desktop.
+This script builds an image for both `amd64` and `arm64` architectures using the Docker builder `buildx`.
+Read the comments in the `dockerbuild.sh` script if you didn't enable this builder yet.
 
-Please note the `dockerbuild.sh` script will also push the image to the Docker Hub repository. If you just want to test the docker build on your local machine, you can use the following script instead:
+Please note the `dockerbuild.sh` script will also push the image to the Docker Hub repository.
+If you just want to test the docker build on your local machine, you can use the following script instead:
 
 [source,shell]
 ----
 ./bin/dockerbuild_singleplatform.sh
 ----
 
-NOTE: currently, only shell scripts are provided to build and start notebooks. So if you're on Windows you either have to use WSL or run the commands in the shell script from the command line manually.
+NOTE: Currently, only shell scripts are provided to build and start notebooks. So if you're on Windows, you either have to use WSL or run the commands in the shell script from the command line manually.
 
 == MyBinder.org
-In order to start _roboquant_ notebooks quickly on MyBinder.org, there is a `binder directory included with a `Dockerfile` that retrieves the latest image from Docker Hub. This avoids that MyBinder.org has to build the image from scratch that leads to prolonged startup times.
+In order to start _roboquant_ notebooks quickly on MyBinder.org, there is a `binder directory included with a `Dockerfile` that retrieves the latest image from Docker Hub.
+This avoids MyBinder.org having to build the image from scratch that would otherwise lead to prolonged startup times.

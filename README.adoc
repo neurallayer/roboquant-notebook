@@ -55,7 +55,8 @@ These are the how-to notebooks that are included:
 * crypto.ipynb — Shows the integration with many crypto exchanges using the XChange library
 * strategies.ipynb — How to develop your own strategies
 * policies.ipynb — How to develop a custom policy
-* discord.ipynb — ow to develop a Discord bot
+* discord.ipynb — How to develop a Discord bot
+* optimization.ipynb — How to perform advanced back tests with optimization via hyperparameter search
 * talib.ipynb — How to develop technical analysis strategies using the `TaLib` library
 * ta4j.ipynb — How to develop technical analysis strategies using teh `Ta4j` library
 * forex.ipynb — How to run back-tests for Forex trading
