@@ -15,7 +15,7 @@ USER 1000
 
 # Install the Kotlin kernel in the Jupyter environment
 # RUN pip install kotlin-jupyter-kernel==0.11.0.255
-RUN pip install -i https://test.pypi.org/simple/ kotlin-jupyter-kernel==0.12.0.56
+RUN pip install -i https://test.pypi.org/simple/ kotlin-jupyter-kernel==0.12.0.97
 
 # Make additional Kotlin kernels available with different memory profiles
 RUN python -m kotlin_kernel add-kernel --name "Small_0.5GB" --jvm-arg=-Xmx512M
@@ -26,7 +26,7 @@ RUN python -m kotlin_kernel add-kernel --name "Large_8GB" --jvm-arg=-Xmx8G
 RUN mkdir -p /home/jovyan/notebooks
 COPY --chown=1000:100 notebooks /home/jovyan/notebooks
 
-# Run the preload notebook to load libraries and historic data onto the image
+# Run the preload notebook to pre-load libraries and historic data onto the image
 RUN jupyter nbconvert --to notebook --execute notebooks/preload.ipynb && rm -f notebooks/preload*.ipynb
 
 

@@ -56,5 +56,5 @@ If you just want to test the docker build on your local machine, you can use the
 NOTE: Currently, only shell scripts are provided to build and start notebooks. So if you're on Windows, you either have to use WSL or run the commands in the shell script from the command line manually.
 
 == MyBinder.org
-In order to start _roboquant_ notebooks quickly on MyBinder.org, there is a `binder directory included with a `Dockerfile` that retrieves the latest image from Docker Hub.
+To start _roboquant_ notebooks quickly on MyBinder.org, there is a `binder directory included with a `Dockerfile` that retrieves the latest image from Docker Hub.
 This avoids MyBinder.org having to build the image from scratch that would otherwise lead to prolonged startup times.
