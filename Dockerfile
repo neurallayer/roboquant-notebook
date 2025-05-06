@@ -1,5 +1,5 @@
 # we use the smaller base-notebook image as a starting point
-FROM jupyter/base-notebook:2023-04-24
+FROM jupyter/base-notebook:notebook-7.0.6
 
 # Install OpenJDK as root
 USER root
@@ -14,8 +14,7 @@ RUN jupyter labextension disable "@jupyterlab/apputils-extension:announcements"
 USER 1000
 
 # Install the Kotlin kernel in the Jupyter environment
-# RUN pip install kotlin-jupyter-kernel==0.11.0.255
-RUN pip install -i https://test.pypi.org/simple/ kotlin-jupyter-kernel==0.12.0.97
+RUN pip install kotlin-jupyter-kernel==0.12.0.139
 
 # Make additional Kotlin kernels available with different memory profiles
 RUN python -m kotlin_kernel add-kernel --name "Small_0.5GB" --jvm-arg=-Xmx512M

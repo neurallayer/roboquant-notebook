@@ -16,16 +16,6 @@
 # alpaca.public.key=your_api_key_id
 # alpaca.secret.key=your_api_secret_key
 
-# Uncomment the following line and change the value for Alpha Vantage access
-# alphavantage.key=your_api_key
-
-# Uncomment the following two lines and change the values for Binance access
-# binance.public.key=your_key
-# binance.secret.key=you_secret
-
-# Uncomment the following line and change the value for Polygon.io access
-# polygon.key=your_key
-
 # Uncomment the following line and change the value for the Discord token
 # discord.token=your_token
 
