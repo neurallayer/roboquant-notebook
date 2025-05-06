@@ -26,4 +26,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: roboquant/jupyter:2.2.0,roboquant/jupyter:latest
+          tags: roboquant/jupyter:3.0.0,roboquant/jupyter:latest

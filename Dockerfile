@@ -1,5 +1,5 @@
 # we use the smaller base-notebook image as a starting point
-FROM jupyter/base-notebook:notebook-7.0.6
+FROM quay.io/jupyter/base-notebook:notebook-7.4.1
 
 # Install OpenJDK as root
 USER root
